@@ -14,7 +14,7 @@ const PORT = 3000;
 //make get request using 2 parameters - path & callback function. Function has 2 args (req = request, res = response)
 app.get('/', function (req, res) {
     // Our server is sending the response ('Hello World')
-    res.send('Hello World!')
+    res.json({message: 'Hello World!'})
   });
 
   // set which port we want to listen for the response, and function 
